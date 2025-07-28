@@ -5,7 +5,7 @@ import { MapPin, Mail, Phone, Calendar, Award, Target, Heart, Github, Linkedin, 
 
 export default function Profile() {
   const profileData = {
-    image: "/images/profile.jpg",
+    image: `${import.meta.env.BASE_URL}images/profile.jpg`,
     name: "DUDEKULA SALEEM",
     title: "Frontend Developer & Computer Science Engineer",
     location: "KL University, Vaddeswaram",
