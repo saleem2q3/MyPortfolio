@@ -90,21 +90,7 @@ export default function Footer() {
             </div>
 
             {/* Legal */}
-            <div>
-              <h4 className="text-base sm:text-lg font-semibold mb-4 sm:mb-6">Legal</h4>
-              <ul className="space-y-2 sm:space-y-3">
-                {footerLinks.map((link, index) => (
-                  <motion.li key={index} whileHover={{ x: 5 }}>
-                    <a
-                      href={link.href}
-                      className="text-sm sm:text-base text-gray-400 hover:text-white transition-colors duration-300"
-                    >
-                      {link.label}
-                    </a>
-                  </motion.li>
-                ))}
-              </ul>
-            </div>
+            
           </motion.div>
         </div>
 
@@ -117,7 +103,6 @@ export default function Footer() {
         >
           <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
             <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4">
-              <p className="text-gray-400 text-xs sm:text-sm">© {currentYear} All rights reserved.</p>
               <motion.div
                 className="flex items-center space-x-2 text-gray-400 text-xs sm:text-sm"
                 whileHover={{ scale: 1.05 }}
