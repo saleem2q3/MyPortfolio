@@ -4,11 +4,12 @@ import { motion, AnimatePresence } from "framer-motion"
 import { X, Download, FileText, ExternalLink } from "lucide-react"
 
 export default function ResumeModal({ isOpen, onClose }) {
+  const BASE_PATH = "/MyPortfolio" 
   const handleDownload = () => {
     try {
       // Create a link element and trigger download
       const link = document.createElement("a")
-      link.href = "/2200030827-saleem.pdf"
+      link.href = `${BASE_PATH}/2200030827-saleem.pdf`
       link.download = "2200030827-saleem.pdf"
       document.body.appendChild(link)
       link.click()
@@ -16,12 +17,12 @@ export default function ResumeModal({ isOpen, onClose }) {
     } catch (error) {
       console.error("Download failed:", error)
       // Fallback: open in new tab
-      window.open("/2200030827-saleem.pdf", "_blank")
+      window.open(`${BASE_PATH}/2200030827-saleem.pdf`, "_blank")
     }
   }
 
   const handleOpenInNewTab = () => {
-    window.open("/2200030827-saleem.pdf", "_blank")
+    window.open(`${BASE_PATH}/2200030827-saleem.pdf`, "_blank")
   }
 
   return (
@@ -86,7 +87,7 @@ export default function ResumeModal({ isOpen, onClose }) {
             {/* PDF Display */}
             <div className="h-[calc(95vh-60px)] sm:h-[calc(90vh-80px)] bg-gray-100 relative">
               <iframe
-                src="/2200030827-saleem.pdf#toolbar=1&navpanes=1&scrollbar=1"
+                src={`${BASE_PATH}/2200030827-saleem.pdf#toolbar=1&navpanes=1&scrollbar=1`}
                 className="w-full h-full border-0"
                 title="Resume PDF - Dudekula Saleem"
                 loading="lazy"
