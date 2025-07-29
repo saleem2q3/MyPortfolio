@@ -8,8 +8,7 @@ export default function ResumeModal({ isOpen, onClose }) {
     try {
       // Create a link element and trigger download
       const link = document.createElement("a")
-      link.href = `${BASE_PATH}/2200030827-saleem.pdf`
-      window.open(`${BASE_PATH}/2200030827-saleem.pdf`, "_blank") 
+      link.href = `${BASE_PATH}/2200030827-saleem.pdf` 
       link.download = "2200030827-saleem.pdf"
       document.body.appendChild(link)
       link.click()
@@ -17,12 +16,12 @@ export default function ResumeModal({ isOpen, onClose }) {
     } catch (error) {
       console.error("Download failed:", error)
       // Fallback: open in new tab
-      window.open("/2200030827-saleem.pdf", "_blank")
+      window.open(`${BASE_PATH}/2200030827-saleem.pdf`, "_blank")
     }
   }
 
   const handleOpenInNewTab = () => {
-    window.open("/2200030827-saleem.pdf", "_blank")
+    window.open(`${BASE_PATH}/2200030827-saleem.pdf`, "_blank")
   }
 
   return (
