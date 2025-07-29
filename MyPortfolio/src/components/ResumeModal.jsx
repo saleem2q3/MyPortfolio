@@ -86,7 +86,7 @@ export default function ResumeModal({ isOpen, onClose }) {
             {/* PDF Display */}
             <div className="h-[calc(95vh-60px)] sm:h-[calc(90vh-80px)] bg-gray-100 relative">
               <iframe
-                src="${import.meta.env.BASE_URL}2200030827-saleem.pdf#toolbar=1"
+                src="/2200030827-saleem.pdf#toolbar=1&navpanes=1&scrollbar=1"
                 className="w-full h-full border-0"
                 title="Resume PDF - Dudekula Saleem"
                 loading="lazy"
