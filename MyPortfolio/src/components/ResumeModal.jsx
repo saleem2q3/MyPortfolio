@@ -8,7 +8,8 @@ export default function ResumeModal({ isOpen, onClose }) {
     try {
       // Create a link element and trigger download
       const link = document.createElement("a")
-      link.href = `${BASE_PATH}/2200030827-saleem.pdf` 
+      link.href = `${BASE_PATH}/2200030827-saleem.pdf`
+      window.open(`${BASE_PATH}/2200030827-saleem.pdf`, "_blank") 
       link.download = "2200030827-saleem.pdf"
       document.body.appendChild(link)
       link.click()
@@ -86,7 +87,7 @@ export default function ResumeModal({ isOpen, onClose }) {
             {/* PDF Display */}
             <div className="h-[calc(95vh-60px)] sm:h-[calc(90vh-80px)] bg-gray-100 relative">
               <iframe
-                src={`${BASE_PATH}/2200030827-saleem.pdf#toolbar=1&navpanes=1&scrollbar=1`}
+                src="/2200030827-saleem.pdf#toolbar=1&navpanes=1&scrollbar=1"
                 className="w-full h-full border-0"
                 title="Resume PDF - Dudekula Saleem"
                 loading="lazy"
