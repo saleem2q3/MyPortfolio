@@ -16,12 +16,12 @@ export default function ResumeModal({ isOpen, onClose }) {
     } catch (error) {
       console.error("Download failed:", error)
       // Fallback: open in new tab
-      window.open(`${BASE_PATH}/2200030827-saleem.pdf`, "_blank")
+      window.open("/2200030827-saleem.pdf", "_blank")
     }
   }
 
   const handleOpenInNewTab = () => {
-    window.open(`${BASE_PATH}/2200030827-saleem.pdf`, "_blank")
+    window.open("/2200030827-saleem.pdf", "_blank")
   }
 
   return (
