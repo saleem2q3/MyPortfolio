@@ -3,40 +3,143 @@
   <head>
     <meta charset="UTF-8" />
     
-    <!-- Favicons -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
-    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <!-- Professional Animated SVG Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cstyle%3E.bg%7Bfill:%23ffffff;stroke:%23e2e8f0;stroke-width:1%7D.letter%7Bfill:%236366f1;font-family:system-ui,sans-serif;font-size:18px;font-weight:700;animation:glow 3s ease-in-out infinite%7D.dot%7Bfill:%2310b981;animation:pulse 2s ease-in-out infinite%7D@keyframes glow%7B0%25,100%25%7Bopacity:0.9%7D50%25%7Bopacity:1%7D%7D@keyframes pulse%7B0%25,100%25%7Btransform:scale(1)%7D50%25%7Btransform:scale(1.2)%7D%7D%3C/style%3E%3Crect class='bg' x='2' y='2' width='28' height='28' rx='6'/%3E%3Ctext class='letter' x='16' y='22' text-anchor='middle'%3ED%3C/text%3E%3Ccircle class='dot' cx='24' cy='8' r='2'/%3E%3C/svg%3E" />
     
+    <!-- Different sizes for optimal display -->
+    <link rel="icon" type="image/svg+xml" sizes="16x16" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cstyle%3E.bg%7Bfill:%23ffffff;stroke:%23e2e8f0;stroke-width:0.5%7D.letter%7Bfill:%236366f1;font-family:system-ui,sans-serif;font-size:10px;font-weight:700;animation:glow 3s ease-in-out infinite%7D.dot%7Bfill:%2310b981;animation:pulse 2s ease-in-out infinite%7D@keyframes glow%7B0%25,100%25%7Bopacity:0.9%7D50%25%7Bopacity:1%7D%7D@keyframes pulse%7B0%25,100%25%7Btransform:scale(1)%7D50%25%7Btransform:scale(1.2)%7D%7D%3C/style%3E%3Crect class='bg' x='1' y='1' width='14' height='14' rx='3'/%3E%3Ctext class='letter' x='8' y='11' text-anchor='middle'%3ED%3C/text%3E%3Ccircle class='dot' cx='12' cy='4' r='1'/%3E%3C/svg%3E" />
+    
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cstyle%3E.bg%7Bfill:%23ffffff;stroke:%23e2e8f0;stroke-width:1%7D.letter%7Bfill:%236366f1;font-family:system-ui,sans-serif;font-size:18px;font-weight:700;animation:glow 3s ease-in-out infinite%7D.dot%7Bfill:%2310b981;animation:pulse 2s ease-in-out infinite%7D@keyframes glow%7B0%25,100%25%7Bopacity:0.9%7D50%25%7Bopacity:1%7D%7D@keyframes pulse%7B0%25,100%25%7Btransform:scale(1)%7D50%25%7Btransform:scale(1.2)%7D%7D%3C/style%3E%3Crect class='bg' x='2' y='2' width='28' height='28' rx='6'/%3E%3Ctext class='letter' x='16' y='22' text-anchor='middle'%3ED%3C/text%3E%3Ccircle class='dot' cx='24' cy='8' r='2'/%3E%3C/svg%3E" />
+    
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Cstyle%3E.bg%7Bfill:%23ffffff%7D.border%7Bfill:none;stroke:%23e2e8f0;stroke-width:2%7D.letter%7Bfill:%236366f1;font-family:system-ui,sans-serif;font-size:80px;font-weight:700;animation:glow 4s ease-in-out infinite%7D.dot%7Bfill:%2310b981;animation:pulse 3s ease-in-out infinite%7D@keyframes glow%7B0%25,100%25%7Bopacity:0.9%7D50%25%7Bopacity:1%7D%7D@keyframes pulse%7B0%25,100%25%7Btransform:scale(1)%7D50%25%7Btransform:scale(1.1)%7D%7D%3C/style%3E%3Crect class='bg' width='180' height='180' rx='40'/%3E%3Crect class='border' x='10' y='10' width='160' height='160' rx='35'/%3E%3Ctext class='letter' x='90' y='120' text-anchor='middle'%3ED%3C/text%3E%3Ccircle class='dot' cx='135' cy='45' r='8'/%3E%3C/svg%3E" />
+    
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="data:application/json,%7B%22name%22:%22Dudekula%20Saleem%20-%20Portfolio%22,%22short_name%22:%22DS%22,%22description%22:%22Frontend%20Developer%20%26%20AI%20Specialist%22,%22start_url%22:%22/%22,%22display%22:%22standalone%22,%22background_color%22:%22%23ffffff%22,%22theme_color%22:%22%236366f1%22,%22icons%22:%5B%7B%22src%22:%22data:image/svg+xml,%253Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%253E%253Cstyle%253E.bg%257Bfill:%2523ffffff%257D.border%257Bfill:none;stroke:%2523e2e8f0;stroke-width:3%257D.letter%257Bfill:%25236366f1;font-family:system-ui,sans-serif;font-size:90px;font-weight:700%257D.dot%257Bfill:%252310b981%257D%253C/style%253E%253Crect class='bg' width='192' height='192' rx='48'/%253E%253Crect class='border' x='12' y='12' width='168' height='168' rx='42'/%253E%253Ctext class='letter' x='96' y='130' text-anchor='middle'%253ED%253C/text%253E%253Ccircle class='dot' cx='144' cy='48' r='10'/%253E%253C/svg%253E%22,%22sizes%22:%22192x192%22,%22type%22:%22image/svg+xml%22%7D,%7B%22src%22:%22data:image/svg+xml,%253Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%253E%253Cstyle%253E.bg%257Bfill:%2523ffffff%257D.border%257Bfill:none;stroke:%2523e2e8f0;stroke-width:8%257D.letter%257Bfill:%25236366f1;font-family:system-ui,sans-serif;font-size:240px;font-weight:700%257D.dot%257Bfill:%252310b981%257D%253C/style%253E%253Crect class='bg' width='512' height='512' rx='128'/%253E%253Crect class='border' x='32' y='32' width='448' height='448' rx='112'/%253E%253Ctext class='letter' x='256' y='340' text-anchor='middle'%253ED%253C/text%253E%253Ccircle class='dot' cx='384' cy='128' r='24'/%253E%253C/svg%253E%22,%22sizes%22:%22512x512%22,%22type%22:%22image/svg+xml%22%7D%5D%7D" />
+        
     <!-- Meta Tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Dudekula Saleem - Frontend Developer & Computer Science Engineer specializing in AI & IPA. Building innovative web solutions with modern technologies." />
     <meta name="keywords" content="Frontend Developer, Computer Science Engineer, AI, Machine Learning, React, JavaScript, Web Development, Portfolio" />
     <meta name="author" content="Dudekula Saleem" />
-    <meta name="theme-color" content="#2563eb" />
-    
+    <meta name="theme-color" content="#6366f1" />
+        
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Dudekula Saleem - Frontend Developer & AI Specialist" />
     <meta property="og:description" content="Computer Science Engineering student specializing in AI & IPA. Creating innovative solutions through modern web technologies." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://your-domain.com" />
-    <meta property="og:image" content="/og-image.png" />
-    
+    <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 630'%3E%3Cstyle%3E.bg%7Bfill:%23f8fafc%7D.card%7Bfill:%23ffffff;stroke:%23e2e8f0;stroke-width:2%7D.letter%7Bfill:%236366f1;font-family:system-ui,sans-serif;font-size:120px;font-weight:700%7D.dot%7Bfill:%2310b981%7D.text%7Bfill:%23334155;font-family:system-ui,sans-serif;font-size:36px;font-weight:600%7D.subtext%7Bfill:%236b7280;font-family:system-ui,sans-serif;font-size:24px%7D%3C/style%3E%3Crect class='bg' width='1200' height='630'/%3E%3Crect class='card' x='100' y='100' width='1000' height='430' rx='24'/%3E%3Ctext class='letter' x='300' y='380' text-anchor='middle'%3ED%3C/text%3E%3Ccircle class='dot' cx='380' cy='200' r='12'/%3E%3Ctext class='text' x='500' y='280'%3EDudekula Saleem%3C/text%3E%3Ctext class='subtext' x='500' y='320'%3EFrontend Developer %26 AI Specialist%3C/text%3E%3Ctext class='subtext' x='500' y='360'%3EBuilding innovative web solutions%3C/text%3E%3C/svg%3E" />
+        
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Dudekula Saleem - Frontend Developer & AI Specialist" />
     <meta name="twitter:description" content="Computer Science Engineering student specializing in AI & IPA. Creating innovative solutions through modern web technologies." />
-    <meta name="twitter:image" content="/twitter-image.png" />
-    
+    <meta name="twitter:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 630'%3E%3Cstyle%3E.bg%7Bfill:%23f8fafc%7D.card%7Bfill:%23ffffff;stroke:%23e2e8f0;stroke-width:2%7D.letter%7Bfill:%236366f1;font-family:system-ui,sans-serif;font-size:120px;font-weight:700%7D.dot%7Bfill:%2310b981%7D.text%7Bfill:%23334155;font-family:system-ui,sans-serif;font-size:36px;font-weight:600%7D.subtext%7Bfill:%236b7280;font-family:system-ui,sans-serif;font-size:24px%7D%3C/style%3E%3Crect class='bg' width='1200' height='630'/%3E%3Crect class='card' x='100' y='100' width='1000' height='430' rx='24'/%3E%3Ctext class='letter' x='300' y='380' text-anchor='middle'%3ED%3C/text%3E%3Ccircle class='dot' cx='380' cy='200' r='12'/%3E%3Ctext class='text' x='500' y='280'%3EDudekula Saleem%3C/text%3E%3Ctext class='subtext' x='500' y='320'%3EFrontend Developer %26 AI Specialist%3C/text%3E%3Ctext class='subtext' x='500' y='360'%3EBuilding innovative web solutions%3C/text%3E%3C/svg%3E" />
+        
     <title>Dudekula Saleem - Frontend Developer & AI Specialist | Portfolio</title>
-    <script type="module" crossorigin src="/MyPortfolio/assets/index-CqrMAjWT.js"></script>
-    <link rel="stylesheet" crossorigin href="/MyPortfolio/assets/index-CClQQmqT.css">
+    
+    <style>
+      /* Accessibility: Respect user's motion preferences */
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+        }
+      }
+    </style>
+    <script type="module" crossorigin src="/MyPortfolio/assets/index-CvbsLuRG.js"></script>
+    <link rel="stylesheet" crossorigin href="/MyPortfolio/assets/index-6l_kR-he.css">
   </head>
   <body>
     <div id="root"></div>
+    
+    <!-- Professional Favicon Animation Script -->
+    <script>
+      // Professional animated favicon with smooth transitions
+      function createProfessionalFavicon() {
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = 32;
+        canvas.height = 32;
+        
+        let frame = 0;
+        const colors = {
+          primary: '#6366f1',
+          secondary: '#10b981',
+          background: '#ffffff',
+          border: '#e2e8f0'
+        };
+        
+        function drawFrame() {
+          // Clear canvas with white background
+          ctx.fillStyle = colors.background;
+          ctx.fillRect(0, 0, 32, 32);
+          
+          // Draw subtle border
+          ctx.strokeStyle = colors.border;
+          ctx.lineWidth = 1;
+          ctx.strokeRect(2, 2, 28, 28);
+          
+          // Draw rounded rectangle background
+          ctx.fillStyle = colors.background;
+          ctx.beginPath();
+          ctx.roundRect(2, 2, 28, 28, 6);
+          ctx.fill();
+          ctx.stroke();
+          
+          // Draw letter "D" with subtle glow effect
+          const glowIntensity = 0.9 + Math.sin(frame * 0.05) * 0.1;
+          ctx.fillStyle = colors.primary;
+          ctx.globalAlpha = glowIntensity;
+          ctx.font = 'bold 18px system-ui, -apple-system, sans-serif';
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'middle';
+          ctx.fillText('D', 16, 18);
+          ctx.globalAlpha = 1;
+          
+          // Draw animated dot indicator
+          const dotPulse = 1 + Math.sin(frame * 0.08) * 0.2;
+          ctx.fillStyle = colors.secondary;
+          ctx.beginPath();
+          ctx.arc(24, 8, 2 * dotPulse, 0, Math.PI * 2);
+          ctx.fill();
+          
+          // Update favicon
+          const dataURL = canvas.toDataURL('image/png');
+          let favicon = document.querySelector('link[rel="icon"][type="image/png"]');
+          if (!favicon) {
+            favicon = document.createElement('link');
+            favicon.rel = 'icon';
+            favicon.type = 'image/png';
+            document.head.appendChild(favicon);
+          }
+          favicon.href = dataURL;
+          
+          frame++;
+          requestAnimationFrame(drawFrame);
+        }
+        
+        // Start animation with smooth 60fps
+        drawFrame();
+      }
+      
+      // Tab focus/blur effects
+      let originalTitle = document.title;
+      document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+          document.title = '👋 Come back soon! - Dudekula Saleem';
+        } else {
+          document.title = originalTitle;
+        }
+      });
+      
+      // Initialize professional favicon
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', createProfessionalFavicon);
+      } else {
+        createProfessionalFavicon();
+      }
+    </script>
   </body>
 </html>
