@@ -1,24 +1,25 @@
 "use client"
-
 import { motion } from "framer-motion"
 import { ExternalLink, Github, Calendar, Users, TrendingUp, Database } from "lucide-react"
 
 export default function Projects() {
   const projects = [
     {
-      title: "Hospital Management System",
+      title: "AuctionX",
       description:
-        "Comprehensive healthcare platform managing 10,000+ patient records with seamless doctor coordination and real-time updates.",
-      image: "https://static.vecteezy.com/system/resources/previews/051/427/785/non_2x/telemedicine-concept-illustration-doctor-concept-vector.jpg",
-      tech: ["React.js", "Node.js", "MongoDB", "Express.js", "Bootstrap"],
+        "Revolutionary auction marketplace bringing together collectors, enthusiasts, and sellers from around the world, creating a vibrant marketplace for extraordinary finds.",
+      image: "https://img.freepik.com/premium-vector/auctioneer-raising-his-gavel-knock-down-sell-picture-auction_753844-56.jpg?semt=ais_items_boosted&w=740",
+      demoLink: "https://saleem2q3.github.io/AuctionX/",
+      githubLink: "https://github.com/saleem2q3/AuctionX",
+      tech: ["React.js", "JavaScript", "HTML5", "CSS3", "Bootstrap"],
       metrics: {
-        users: "100+",
-        satisfaction: "90%",
-        features: "25+",
+        categories: "Multiple",
+        features: "20+",
+        design: "Modern",
       },
       category: "Full-Stack",
       year: "2024",
-      status: "Completed",
+      status: "Live",
     },
     {
       title: "Career Connect Portal",
@@ -111,15 +112,40 @@ export default function Projects() {
                       <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all duration-300" />
                       <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
                         <div className="flex space-x-3 sm:space-x-4">
-                          <button className="bg-white text-gray-900 px-3 py-2 sm:px-4 sm:py-2 rounded-lg font-medium hover:bg-gray-100 transition-colors flex items-center space-x-2 text-sm">
-                            <ExternalLink className="w-4 h-4" />
-                            <span className="hidden sm:inline">Live Demo</span>
-                            <span className="sm:hidden">Demo</span>
-                          </button>
-                          <button className="bg-gray-900 text-white px-3 py-2 sm:px-4 sm:py-2 rounded-lg font-medium hover:bg-gray-800 transition-colors flex items-center space-x-2 text-sm">
-                            <Github className="w-4 h-4" />
-                            <span>Code</span>
-                          </button>
+                          {project.demoLink ? (
+                            <a
+                              href={project.demoLink}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="bg-white text-gray-900 px-3 py-2 sm:px-4 sm:py-2 rounded-lg font-medium hover:bg-gray-100 transition-colors flex items-center space-x-2 text-sm"
+                            >
+                              <ExternalLink className="w-4 h-4" />
+                              <span className="hidden sm:inline">Live Demo</span>
+                              <span className="sm:hidden">Demo</span>
+                            </a>
+                          ) : (
+                            <button className="bg-white text-gray-900 px-3 py-2 sm:px-4 sm:py-2 rounded-lg font-medium hover:bg-gray-100 transition-colors flex items-center space-x-2 text-sm">
+                              <ExternalLink className="w-4 h-4" />
+                              <span className="hidden sm:inline">Live Demo</span>
+                              <span className="sm:hidden">Demo</span>
+                            </button>
+                          )}
+                          {project.githubLink ? (
+                            <a
+                              href={project.githubLink}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="bg-gray-900 text-white px-3 py-2 sm:px-4 sm:py-2 rounded-lg font-medium hover:bg-gray-800 transition-colors flex items-center space-x-2 text-sm"
+                            >
+                              <Github className="w-4 h-4" />
+                              <span>Code</span>
+                            </a>
+                          ) : (
+                            <button className="bg-gray-900 text-white px-3 py-2 sm:px-4 sm:py-2 rounded-lg font-medium hover:bg-gray-800 transition-colors flex items-center space-x-2 text-sm">
+                              <Github className="w-4 h-4" />
+                              <span>Code</span>
+                            </button>
+                          )}
                         </div>
                       </div>
                     </div>
@@ -171,8 +197,10 @@ export default function Projects() {
                       <div key={metricIndex} className="text-center p-2 sm:p-4 bg-gray-50 rounded-lg sm:rounded-xl">
                         <div className="w-6 h-6 sm:w-8 sm:h-8 mx-auto mb-1 sm:mb-2 flex items-center justify-center">
                           {key === "users" && <Users className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600" />}
+                          {key === "categories" && <Database className="w-4 h-4 sm:w-5 sm:h-5 text-purple-600" />}
+                          {key === "features" && <TrendingUp className="w-4 h-4 sm:w-5 sm:h-5 text-green-600" />}
+                          {key === "design" && <TrendingUp className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600" />}
                           {key === "satisfaction" && <TrendingUp className="w-4 h-4 sm:w-5 sm:h-5 text-green-600" />}
-                          {key === "features" && <Database className="w-4 h-4 sm:w-5 sm:h-5 text-purple-600" />}
                           {key === "speed" && <TrendingUp className="w-4 h-4 sm:w-5 sm:h-5 text-orange-600" />}
                           {key === "processing" && <Database className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600" />}
                           {key === "security" && <TrendingUp className="w-4 h-4 sm:w-5 sm:h-5 text-red-600" />}
